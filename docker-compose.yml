@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    image: node:18
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    tty: true
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./web:/app
+    working_dir: /app
+    command: bash -c 'npm start && npm run build'
