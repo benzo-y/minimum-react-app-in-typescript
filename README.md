@@ -19,7 +19,7 @@ npm install
 
 - コンテナに乗り込みReactのプロジェクトを作成
   ```bash
-  docker-compose run --rm --no-deps react /bin/bash
+  docker-compose run --rm --no-deps web /bin/bash
   npm install -g npm
   npm install -g create-react-app
   npx create-react-app . --template typescript
